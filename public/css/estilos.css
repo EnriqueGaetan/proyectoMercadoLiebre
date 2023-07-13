@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #ebebeb;
+}
+/*------------NAVBAR-----------*/
+.navbar {
+  background-color: #eac926;
+  padding: 15px;
+}
+.top-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 29vw;
+}
+.buscar {
+  display: flex;
+  align-items: start;
+}
+.compra-cuotas {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+.bottom-navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.bottom-navbar li {
+  margin: 0 10px;
+}
+.bottom-navbar a {
+  text-decoration: none;
+  color: #666;
+  display: inline-block;
+  padding: 5px 0px;
+  font-size: 16px;
+}
+.fa-solid.fa-magnifying-glass {
+  font-size: 11px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 3px;
+}
+.burger-menu {
+  background-color: #1259c3;
+  color: white;
+  display: none;
+  max-width: 40px;
+  padding: 10px 0px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  margin: auto;
+}
+/*----------MAIN----------*/
+.banner {
+  width: 100%;
+}
+.main {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.main h2 {
+  text-align: center;
+}
+.ultima {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.ofertas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.articulo {
+  background-color: white;
+  width: 22%;
+  margin-bottom: 10px;
+  padding: 15px;
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.detalle {
+  text-align: left;
+  border-top: solid #ebebeb 1px;
+  position: relative;
+}
+.content-card {
+  display: flex;
+
+}
+.precios {
+  width: 30%;
+  font-size: 16px;
+}
+.descuentos {
+  width: 70%;
+  color: #39b54a;
+  font-size: 14px;
+  text-align: center;
+}
+.descripciones {
+  font-size: 16px;
+  color: #666;
+}
+.detalle i {
+  display: block;
+  font-size: 10px;
+  padding: 5px;
+  color: #39b54a;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 5px;
+  top: -10px;
+}
+/*----------FOOTER------------*/
+.footer {
+  background-color: white;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.footer .cards{
+  display: flex;
+}
+.footer h4{
+  text-align: center;
+}
+.pagos, .envio, .seguridad{
+  margin-bottom: 20px;
+}
+.fa-solid.fa-credit-card,
+.fa-gift,
+.fa-user-shield {
+  color: #1259c3;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/*----------REGISTRO------------*/
+.titulo-registro{
+  text-align: center;
+}
+.formulario{
+  width: auto;
+  margin: 15px auto;
+  padding: 20px;
+}
+.formulario input, button{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 5px;
+  font-size: 17px;
+  border-style: none;
+  border-radius: 5%;
+}
+.formulario p{
+  font-weight: bold;
+}
+.perfil{
+  display: flex;
+}
+.formulario button a{
+  color: white;
+  text-decoration: none;
+}
+.formulario button{
+  background-color: #1259c3;
+  color: white;
+}
+/*----------LOGUIN------------*/
+.registro {
+  margin: 0;
+  padding: 20px;
+}
+.registro input, button{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 5px;
+  font-size: 17px;
+  border-style: none;
+  border-radius: 5%;
+}
+
+.registro button a{
+  color: white;
+  text-decoration: none;
+}
+.registro button{
+  background-color: #1259c3;
+  color: white;
+}
+/*----------TABLET------------*/
+@media only screen and (max-width: 768px) {
+  .burger-menu {
+    display: none;
+  }
+  .compra-cuotas {
+    font-size: 12px;
+    align-items: center;
+  }
+  .articulo {
+    width: 45%;
+  }
+}
+/*----------MOBILE------------*/
+@media only screen and (max-width: 375px) {
+  .top-navbar {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .compra-cuotas {
+    font-size: 10px;
+    align-items: center;
+  }
+  .bottom-navbar {
+    display: none;
+  }
+  .descripciones {
+    display: none;
+  }
+  .articulo {
+    width: 100%;
+    box-shadow: none;
+  }
+  .burger-menu {
+    display: block;
+    margin: auto;
+  }
+  .formulario{
+    width: 90%;
+  }
+}
+
+
