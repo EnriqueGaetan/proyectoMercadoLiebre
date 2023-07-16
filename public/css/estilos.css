@@ -95,6 +95,9 @@ body {
   width: 22%;
   margin-bottom: 10px;
   padding: 15px;
+  border-radius: 2%;
+}
+.articulo:hover{
   box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 img {
@@ -121,8 +124,12 @@ img {
   text-align: center;
 }
 .descripciones {
+  display: none;
   font-size: 16px;
   color: #666;
+}
+.articulo:hover .descripciones{
+  display: block;
 }
 .detalle i {
   display: block;
@@ -135,6 +142,11 @@ img {
   position: absolute;
   right: 5px;
   top: -10px;
+}
+
+.articulo:hover .detalle i{
+  transition: 400ms;
+  transform: rotateZ(-90deg);
 }
 /*----------FOOTER------------*/
 .footer {
@@ -152,22 +164,23 @@ img {
 .pagos, .envio, .seguridad{
   margin-bottom: 20px;
 }
-.fa-solid.fa-credit-card,
-.fa-gift,
-.fa-user-shield {
+.footer i{
   color: #1259c3;
   font-size: 2em;
   margin-bottom: 10px;
 }
-
+.footer i:hover {
+  color: #0022AA;
+}
 /*----------REGISTRO------------*/
 .titulo-registro{
   text-align: center;
 }
 .formulario{
-  width: auto;
+  width: 400px;
   margin: 15px auto;
   padding: 20px;
+  border-radius: 10px;
 }
 .formulario input, button{
   width: 100%;
@@ -185,26 +198,43 @@ img {
 }
 .formulario button a{
   color: white;
-  text-decoration: none;
+  justify-content: space-between;
 }
 .formulario button{
   background-color: #1259c3;
   color: white;
+  text-decoration: none;
 }
+.interes{
+  display: flex;
+  flex-direction: column;
+}
+.formulario button:hover{
+  background-color: #0022AA;
+}
+
 /*----------LOGUIN------------*/
+.titulo-loguin{
+  text-align: center;
+}
 .registro {
-  margin: 0;
+  width: 400px;
+  margin: 15px auto;
   padding: 20px;
+  border-radius: 10px; 
 }
 .registro input, button{
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   padding: 5px;
   font-size: 17px;
   border-style: none;
   border-radius: 5%;
 }
-
+.error{
+  color: red;
+  font-size: small;
+}
 .registro button a{
   color: white;
   text-decoration: none;
@@ -212,6 +242,10 @@ img {
 .registro button{
   background-color: #1259c3;
   color: white;
+}
+
+.button:hover{
+  background-color: #0022AA;
 }
 /*----------TABLET------------*/
 @media only screen and (max-width: 768px) {
@@ -251,7 +285,10 @@ img {
     margin: auto;
   }
   .formulario{
-    width: 90%;
+    width: auto;
+  }
+  .registro {
+    width: auto;
   }
 }
 

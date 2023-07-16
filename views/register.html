@@ -63,22 +63,21 @@
         
   
       <p>Categorías de interés</p>
-      <input type="checkbox" id="electro" name="intereses" value="Electro">
-      <label for="electro">Electro</label>
-      <input type="checkbox" id="moda" name="intereses" value="Moda">
-      <label for="moda">Moda</label>
-      <input type="checkbox" id="hogar" name="intereses" value="Hogar">
-      <label for="hogar">Hogar</label>
-      <input type="checkbox" id="jugueteria" name="intereses" value="Juguetería">
-      <label for="jugueteria">Juguetería</label>
-      <input type="checkbox" id="vida-sana" name="intereses" value="Vida sana">
-      <label for="vida-sana">Vida sana</label><br><br>
+      <div class="interes">
+      </label><input type="checkbox" id="electro" name="intereses" value="Electro">
+      <label class="checkbox-label" for="electro">Electro
+      <label class="checkbox-label" for="moda"><input type="checkbox" id="moda" name="intereses" value="Moda">Moda</label>
+      <label class="checkbox-label" for="hogar"><input type="checkbox" id="hogar" name="intereses" value="Hogar">Hogar</label>
+      <label class="checkbox-label" for="jugueteria"><input type="checkbox" id="jugueteria" name="intereses" value="Juguetería">Juguetería</label>
+      <label class="checkbox-label" for="vida-sana"><input type="checkbox" id="vida-sana" name="intereses" value="Vida sana">Vida sana</label>
+      </div>
+      <br><br>
   
       <p>Foto de usuario<p>
       <input type="file" id="foto-usuario" name="foto-usuario" accept=".jpg, .png"><br><br>
   
       <p>Contraseña</p>
-      <input type="password" id="password" name="password"><br><br>
+      <input type="password" id="password" name="password"><br>
   
       <p>Confirmar contraseña</p>
       <input type="password" id="confirmar-password" name="confirmar-password"><br><br>
